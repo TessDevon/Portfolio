@@ -1,0 +1,397 @@
+@import 'normalize';
+@import 'about';
+@import 'edu';
+
+/*@charset "UTF-8";*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- header -------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+  background-image: url("../img/TessDevonBanner1.jpg");
+  aspect-ratio: 20 / 9;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+
+h1, .header_h2{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+h1{
+  font-size: 6.5vw;
+}
+
+.header_h2{
+  font-size: 5.3vw;
+  color: chartreuse;
+}
+
+.header_boarder{
+  position: relative;
+  top: 0;
+  left: 5%;
+}
+
+.header_button1{
+  position: absolute;
+  bottom: 4vw;
+  left: 4vw;
+  font-size: 4vw;
+}
+
+.header_button2{
+  position: absolute;
+  bottom: 4vw;
+  left: 28vw;
+  font-size: 4vw;
+}
+
+.header_ul{
+  list-style: none;
+  padding-left: 15px;
+}
+
+.header_link1{
+  font-size: 2vw;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.header_link2{
+  font-size: 2vw;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+button{
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  padding: 7px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- main ---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+main{
+  margin: 0 10vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3{
+  font-size: 5vw;
+  padding-top: 5vw;
+}
+
+h4{
+  font-size: 4vw;
+}
+
+p{
+  font-size: 3.6vw;
+  line-height: 5vw;
+}
+
+.section_edu_work{
+  width: 100%;
+}
+
+.edu_links{
+  text-decoration: none;
+  color: rgb(99, 144, 50);    
+}
+
+.table_div{
+  line-height: 6.3vw;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.table_h4{
+  margin: 15px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-size: 3.5vw;
+}
+
+table{
+  margin: 15px;
+}
+
+td{
+  font-size: 4vw;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- form ---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+form{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: lightgray;
+  margin-bottom: 20vw;
+  margin-top:50px;
+}
+
+.form_h2 {
+  font-size: 7vw;
+  margin-top: 0;
+}
+
+input[type="submit"] {
+  padding: 16px 32px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="email"], input[type="text"], textarea {
+  width: 95%;
+}
+
+textarea {
+  height: 40vw;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------footer --------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer_link{
+  color: chartreuse;  
+  padding: 25px;
+  padding-right: 5px;
+  padding-left: 15px;
+  font-size: 3.5vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer_text{
+  padding-left: 15px;
+}
+
+#linkedin::before {
+  content:"";
+  background-image: url(../img/linkedin.svg);
+  background-size: 15px;
+  background-color: white;
+  display: inline-block; 
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+} 
+
+#github::before {
+  content:"";
+  background-image: url(../img/github.svg);
+  background-size: 15px;
+  background-color: white;
+  display: inline-block; 
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+} 
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- plate ---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) { 
+
+  header{
+    background-image: url("../img/TessDevonBanner2.jpg");
+    aspect-ratio: 27 / 9;
+  }
+
+  h1{
+    top: 2px;
+    left: 2%;
+    font-size: 4vw;
+  }
+  
+  .header_h2{
+    top: 6px;
+    left: 2%;
+    font-size: 3vw;
+  }
+  
+  .header_button1{
+    bottom: 5px;
+    font-size: 2vw;
+    width: 13vw;
+    left: 65vw;
+  }
+  
+  .header_button2{
+    bottom: 5px;
+    left: 80vw;
+    font-size: 2vw;
+    width: 15vw;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .section_edu_work{
+    grid-column: 1 / span 4;
+  }
+
+  .contactform{
+    grid-column: 6 / span 3;
+  }
+
+  h3{
+    font-size: 3.5vw;
+  }
+
+  h4{
+    font-size: 3vw;
+  }
+  
+  p{
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+
+  .table_div{
+    line-height: 4.5vw;
+  }
+
+  .table_h4{
+   font-size: 2.5vw;
+  }
+
+  td{
+    font-size: 2vw;
+  }
+
+  form{
+    margin-top: 10vw;
+  }
+
+  .form_h2 {
+    font-size: 2.5vw;
+  }
+
+  .footer_link{
+    padding: 5px;
+    font-size: 1.8vw;
+  }
+  
+  .footer_text{
+    font-size: 1.8vw;
+  }
+
+  footer{
+    margin-top: 10vw;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- desktop -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+
+  h1{
+    top: 10px;
+    left: 5%;
+    font-size: 4.5vw;
+  }
+  
+  .header_h2{
+    top: 0px;
+    left: 5%;
+    margin: 5px;
+  }
+
+  .header_button1{
+    bottom: 1rem;
+    right: 15vw;
+  }
+  
+  .header_button2{
+    bottom: 1rem;
+    right: 1vw;
+  }
+
+  .grid-container{
+
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .section_edu_work{
+    grid-column: 1 / span 7;
+  }
+
+  .contactform{
+    grid-column: 9 / span 4;
+  }
+
+  h3{
+    font-size: 2.5vw;
+  }
+
+  h4{
+    font-size: 2vw;
+  }
+  
+  p{
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .table_div{
+    line-height: 2.3vw;
+  }
+
+  .table_h4{
+   font-size: 2vw;
+  }
+
+  td{
+    font-size: 1.5vw;
+    padding-right: 20px;
+  }
+
+  .form_h2 {
+    font-size: 2vw;
+  }
+  
+  .footer_link{
+    padding: 15px;
+    font-size: 1.5vw;
+  }
+  
+  .footer_text{
+    font-size: 1.5vw;
+  }
+}
+
+

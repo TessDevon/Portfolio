@@ -1,0 +1,145 @@
+
+.edu_body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.edu_h2{
+    background-color: black;
+    color: white;
+    font-size: 8vw;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    margin-top: 0;
+    padding-left: 8vw;
+}
+
+.edu_h3{
+    padding-top: 7vw;
+}
+
+.edu_section{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.edu_section>h3{
+    font-size: 5.5vw;
+}
+
+.edu_section>p{
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+.edu_footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 3vw;
+    margin-top: 10vw;
+    font-size: 5vw;
+    padding-left: 8vw;
+}
+
+.footer_edu_link{
+    color: chartreuse;  
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 4vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edu_ul{
+    font-size: 3.5vw;
+}
+
+  
+
+@media only screen and (min-width: 768px) { 
+
+    .edu_section{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
+
+    .edu_h2{
+        font-size: 5vw;
+        text-align: center;
+        padding-left: 15vw;
+    }
+
+
+    .edu_section>h3{
+        font-size: 4vw;
+    }
+
+    .edu_section>p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    .edu_footer{
+        padding-left: 15vw;
+    }
+
+    .footer_edu_link{  
+        font-size: 2vw;
+    }
+
+    .edu_ul{
+        font-size: 2vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .edu_section{
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+
+    .edu_h2{
+        font-size: 3.5vw;
+        text-align: center;
+        padding-left: 30vw;
+    }
+
+
+    .edu_section>h3{
+        font-size: 2vw;
+    }
+
+    .edu_section>p{
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+
+    .edu_footer{
+        padding-left: 30vw;
+    }
+
+    .footer_edu_link{  
+        padding: 5px;
+        font-size: 1.5vw;
+    }
+
+    .footer_edu_text{
+        margin-bottom: 0;
+    }
+
+    .edu_ul{
+        font-size: 1.2vw;
+    }
+
+}
+

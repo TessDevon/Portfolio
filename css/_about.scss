@@ -1,0 +1,53 @@
+
+.about_backgound{
+    margin: 0px;
+}
+
+.about_body{
+    border: 20px solid black;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    padding: 5vw;
+    margin: 0px;
+}
+
+.about_h2{
+    font-size: 8vw;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+}
+
+.aboutpic{
+    width: 70vw;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) { 
+
+    .about_body{
+        border: 32px solid black;
+        display: flex;
+        gap: 5vw;
+        width: 83%;
+    }
+
+    .aboutpic{
+        width: 50vw;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .aboutpic{
+        width: 30vw; 
+    }
+
+
+    .about_body{
+        width: 86.5%;
+    }
+
+}
+
